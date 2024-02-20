@@ -28,6 +28,7 @@ const { writeFile } = require('node:fs/promises')
 
 	html += text
 		.replace(/h(\d)\. ?(.+)/g, (match, p1, p2) => `<h${p1} id="${p2.replace(/ /g, '_')}">${p2}</h${p1}>`)
+		.replace(/_Uses variable returns..._/g, "<em>Uses variable returns...</em>")
 		.replace(/(\s|\()_(\S+)_/g, "$1<em>$2</em>")
 		.replace(/(\s|\()\*(\S+)\*/g, "$1<strong>$2</strong>")
 		.replace(/\* (.+)\n\*\* (.+)/g, '<ul><li>$1<ul><li>$2</li></ul></li></ul>')
