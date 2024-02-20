@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
-    "build": "parcel build src/index.html --public-url /ESOUIDocumentation",
+    "build": "parcel build src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "targets":{

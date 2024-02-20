@@ -5,8 +5,8 @@ const { writeFile } = require('node:fs/promises')
 	const text = await response.text()
 	const [, title] = text.match(/h1\. (.+)/)
 
-	let html = `
-<!doctype html>
+	let html =
+`<!doctype html>
 <html lang="en" data-bs-theme="auto">
 <head>
 <meta charset="utf-8">
