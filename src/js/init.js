@@ -1,9 +1,9 @@
 (function($) {
-    "use strict"
+	"use strict"
 
-    Toc.init({
+	Toc.init({
 		$nav: $('#toc')
-    })
+	})
 	$('body').scrollspy({
 		target: '#toc',
 	})
