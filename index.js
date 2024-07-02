@@ -1,7 +1,7 @@
 const { writeFile } = require('node:fs/promises')
 
 ;(async () => {
-	const response = await fetch('https://raw.githubusercontent.com/esoui/esoui/master/ESOUIDocumentation.txt')
+	const response = await fetch('https://raw.githubusercontent.com/esoui/esoui/live/ESOUIDocumentation.txt')
 	const text = await response.text()
 	const [, title] = text.match(/h1\. (.+)/)
 
